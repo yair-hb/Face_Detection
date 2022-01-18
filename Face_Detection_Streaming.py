@@ -4,7 +4,7 @@ captura = cv2.VideoCapture(0)
 faceClassif = cv2.CascadeClassifier('haarcasacde_forntalface_default.xml')
 
 while True:
-    ret, frame = captura.read()
+    ret,frame = captura.read()
     gris = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     rostros = faceClassif.detectMultiScale(gris,1.3,5)
